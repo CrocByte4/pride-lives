@@ -3,6 +3,9 @@ body {
 }
 
 header {
+  height: 90px;
+  justify-content: center;
+  width:100vw;
   background: linear-gradient(
     120deg,
     red 10%,
@@ -17,4 +20,10 @@ header {
   text-align: center;
   font-style: bolder;
   font-family: monospace;
+}
+
+#fom {
+  background-color: chartreuse;
+  font-family: "Franklin Gothic Medium";
+  cur
 }
