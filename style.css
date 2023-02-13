@@ -1,3 +1,19 @@
 body {
   background-color: lightcoral;
 }
+
+header {
+  background: linear-gradient(
+    120deg,
+    red 10%,
+    orange 30%,
+    yellow 45%,
+    green 60%,
+    blue 70%,
+    indigo 80%,
+    violet 92%,
+    deeppink 95%
+  );
+  text-align: center;
+  font-style: bolder;
+  font-family: monospace;
