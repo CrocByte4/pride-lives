@@ -5,7 +5,7 @@ body {
 header {
   height: 90px;
   justify-content: center;
-  width:100vw;
+  width: 100vw;
   background: linear-gradient(
     120deg,
     red 10%,
@@ -22,8 +22,6 @@ header {
   font-family: monospace;
 }
 
-#fom {
-  background-color: chartreuse;
+#fom-button {
   font-family: "Franklin Gothic Medium";
-  cur
 }
