@@ -12,12 +12,48 @@
       <h1>User Survey Form</h1>
       <a href="/index.html">Homepage</a>
     </header>
+    <main>
+      <form id="user-survey">
+        <fieldset>
+          <legend>Please pick an answer from the drop down menus</legend>
 
-    <h3>Categories</h3>
-    <ul>
-      <li>Definition</li>
-      <li>Historical info</li>
-      <li>Extra</li>
-    </ul>
+          <label for="sexuality">What is your sexuality?</label>
+          <select name="sexuality" id="sexuality">
+            <option value="empty"></option>
+            <option value="Heterosexual/straight">Heterosexual/straight</option>
+            <option value="lesbian">Lesbian</option>
+            <option value="gay">Gay</option>
+            <option value="bisexual">Bisexual</option>
+            <option value="pansexual">Pansexual</option>
+            <option value="demisexual">Demisexual</option>
+            <option value="asexual">Asexual</option>
+            <option value="aromantic">Aromantic</option>
+            <option value="questioning/unsure">Questioning/unsure</option>
+          </select>
+
+          <label for="gender">What is your gender identity?</label>
+          <select name="gender" id="gender">
+            <option value="empty"></option>
+            <option value="cisMale">Cis Male</option>
+            <option value="cisFemale">Cis Female</option>
+            <option value="transMale">Trans Male</option>
+            <option value="transFemale">Trans Female</option>
+            <option value="intersex">Intersex</option>
+            <option value="nonBinary">Non-Binary</option>
+            <option value="genderFluid">Gender Fluid</option>
+          </select>
+
+          <label for="nationality">What is your nationality?</label>
+          <select name="nationality" id="nationality">
+            <option value="uk">British</option>
+            <option value="us">American</option>
+            <option value="aus">Australian</option>
+            <option value="pol">Polish</option>
+            <option value="bra">Brazilian</option>
+            <option value="afg">Afghan</option>
+          </select>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
