@@ -22,6 +22,50 @@ function fomClick() {
 // some answers will change other pages, e.g user's country will be default in support and rights pages, their identity flag will appear on index page on subsequent visits maybe even a custom page theme (colours, symbols, people{changable person of the day}) etc.
 // maybe add user comments to a new page, like a support wall or experiences ...
 
+// trying to get survey answer data into local storage
+
+function SurvAnswers(name, clicks) {
+  this.name = name;
+  this.clicks = clicks;
+  SurvAnswers.allSurvAnswers.push(this);
+}
+
+SurvAnswers.allSurvAnswers = [];
+
+const allCatChoices = [
+  "Heterosexual/straight",
+  "Lesbian(female)",
+  "Gay (male)",
+  "Bisexual",
+  "Demisexual",
+  "Asexual",
+  "Questioning",
+  "Cis Male",
+  "Cis Female",
+  "Trans Male",
+  "Trans Female",
+  "Non-Binary",
+  "Unsure",
+  "British",
+  "American",
+  "Australian",
+  "Polish",
+  "Brazilian",
+  "Afghan",
+];
+
+if (localStorage.getItem("answerData") === null) {
+  for (let i = 0; i < allCatChoices.length; i++) {
+    new SurvAnswers(allCatChoices[i], 0);
+  }
+} else {
+  const answerData = JSON.parse(localStorage.getItem("answerData"));
+
+  for (let i = 0; i < answerData.length; i++) {
+    new Product(answerData[i].name, answerData[i].clicks);
+  }
+}
+
 // chart stuff
 // pie chart may be best for visuals
 
