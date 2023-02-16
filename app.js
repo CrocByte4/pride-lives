@@ -32,20 +32,26 @@ function SurvAnswers(name, clicks) {
 
 SurvAnswers.allSurvAnswers = [];
 
-const allCatChoices = [
+const sxOptions = [
   "Heterosexual/straight",
-  "Lesbian(female)",
-  "Gay (male)",
+  "Lesbian",
+  "Gay",
   "Bisexual",
   "Demisexual",
   "Asexual",
   "Questioning",
+];
+
+const gdOptions = [
   "Cis Male",
   "Cis Female",
   "Trans Male",
   "Trans Female",
   "Non-Binary",
   "Unsure",
+];
+
+const natOptions = [
   "British",
   "American",
   "Australian",
@@ -53,6 +59,8 @@ const allCatChoices = [
   "Brazilian",
   "Afghan",
 ];
+
+const comOptions = [""];
 
 if (localStorage.getItem("answerData") === null) {
   for (let i = 0; i < allCatChoices.length; i++) {
