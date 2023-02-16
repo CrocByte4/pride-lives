@@ -24,13 +24,21 @@ function fomClick() {
 
 // trying to get survey answer data into local storage
 
-function SurvAnswers(name, clicks) {
+/*function SurvAnswers(name, clicks) {
   this.name = name;
   this.clicks = clicks;
   SurvAnswers.allSurvAnswers.push(this);
 }
 
-SurvAnswers.allSurvAnswers = [];
+SurvAnswers.allSurvAnswers = [];*/
+
+function sxPresentation() {
+  if (localStorage.getItem("User Sexuality") === null) {
+    div1 = null;
+  } else if (localStorage.getItem("User Sexuality") === "Asexual") {
+    <div1 id="aceHome"></div1>;
+  }
+}
 
 const sxOptions = [
   "Heterosexual/straight",
@@ -62,8 +70,8 @@ const natOptions = [
 
 const comOptions = [""];
 
-if (localStorage.getItem("answerData") === null) {
-  for (let i = 0; i < allCatChoices.length; i++) {
+/*if (localStorage.getItem("User Sexuality") === null) {
+  for (let i = 0; i < sxOptions.length; i++) {
     new SurvAnswers(allCatChoices[i], 0);
   }
 } else {
@@ -72,7 +80,7 @@ if (localStorage.getItem("answerData") === null) {
   for (let i = 0; i < answerData.length; i++) {
     new Product(answerData[i].name, answerData[i].clicks);
   }
-}
+}*/
 
 // chart stuff
 // pie chart may be best for visuals
