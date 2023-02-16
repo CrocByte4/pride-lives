@@ -12,17 +12,13 @@ dataForm.addEventListener("submit", function (event) {
   console.log(nationality);
   console.log(comment);
 
-  const userSxStr = JSON.stringify(sexuality);
-  localStorage.setItem("User Sexuality", userSxStr);
+  localStorage.setItem("User Sexuality", sexuality);
 
-  const userGdStr = JSON.stringify(gender);
-  localStorage.setItem("User Gender", userGdStr);
+  localStorage.setItem("User Gender", gender);
 
-  const userNatStr = JSON.stringify(nationality);
-  localStorage.setItem("User Nationality", userNatStr);
+  localStorage.setItem("User Nationality", nationality);
 
-  const userComStr = JSON.stringify(comment);
-  localStorage.setItem("User Comment", userComStr);
+  localStorage.setItem("User Comment", comment);
 
   dataForm.reset();
 });
